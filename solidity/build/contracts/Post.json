@@ -1,0 +1,1187 @@
+{
+  "contractName": "Post",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getPostFee",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x129d1da0"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_fee",
+          "type": "uint256"
+        }
+      ],
+      "name": "setPostFee",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x26eb4ca8"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x3ccfd60b"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x715018a6"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8da5cb5b"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x8f32d59b"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "balance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xb69ef8a8"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xf2fde38b"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event",
+      "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_replyTxHash",
+          "type": "uint256"
+        },
+        {
+          "name": "_content",
+          "type": "string"
+        }
+      ],
+      "name": "post",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function",
+      "signature": "0x591a5eb6"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_postTxHash",
+          "type": "uint256"
+        }
+      ],
+      "name": "addPostTxHashes",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function",
+      "signature": "0x503877fa"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getPostTxHashes",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x95dcf0af"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"getPostFee\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_fee\",\"type\":\"uint256\"}],\"name\":\"setPostFee\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_postTxHash\",\"type\":\"uint256\"}],\"name\":\"addPostTxHashes\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_replyTxHash\",\"type\":\"uint256\"},{\"name\":\"_content\",\"type\":\"string\"}],\"name\":\"post\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getPostTxHashes\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"balance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Duncan\\r\",\"details\":\"The Post contract provides simple operations to leave message and fetch txhash on ethereum via transaction data.\\r     Users simply sends message to \\\"post\\\" method, and get the txhash.\\r     Then they send the txhash to \\\"addPostTxHashes\\\" method, making the txhash easily accessible via the contract.\\r     Readers can get all the post txhashes and then get the message by asking full nodes with txhashes.\\r\",\"methods\":{\"addPostTxHashes(uint256)\":{\"details\":\"After post method called, one can choose if they want the txhash recorded by \\r     Currently, there is no way to check if txhash exists on chain by solidity\\r     To prevent abusement, One must pay to use this function\\r\"},\"balance()\":{\"return\":\"return the current balance the contract has\\r\"},\"getPostFee()\":{\"return\":\"fee needed to post an article\\r\"},\"getPostTxHashes()\":{\"return\":\"All the txhashes will be returned and readers can use them to query full nodes to get messages.\\r\"},\"isOwner()\":{\"return\":\"true if `msg.sender` is the owner of the contract.\\r\"},\"owner()\":{\"return\":\"the address of the owner.\\r\"},\"post(uint256,string)\":{\"details\":\"The purpose of the function is to make _replyTxHash and _content recorded in transaction data on chain.\\r     An payable empty function is sufficient to do so.\\r\"},\"renounceOwnership()\":{\"details\":\"Allows the current owner to relinquish control of the contract.\\r It will not be possible to call the functions with the `onlyOwner`\\r modifier anymore.\\r\"},\"setPostFee(uint256)\":{\"details\":\"setter of postFee\\r\"},\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\\r\",\"params\":{\"newOwner\":\"The address to transfer ownership to.\\r\"}},\"withdraw()\":{\"details\":\"withdraw money from the contract to owner\\r\"}},\"title\":\"Post\\r\"},\"userdoc\":{\"methods\":{\"renounceOwnership()\":{\"notice\":\"Renouncing ownership will leave the contract without an owner,\\r thereby removing any functionality that is only available to the owner.\\r\"}}}},\"settings\":{\"compilationTarget\":{\"/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/post.sol\":\"Post\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/feeSupport.sol\":{\"keccak256\":\"0x123555e51bf3924247400ea16b3ea18b81e8a6e92dc74ede24949b76c31de680\",\"urls\":[\"bzzr://c1252d95ac01d91ab7b14e95c911a11ca913ac5505565abc51c856e4e19e5292\"]},\"/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/ownable.sol\":{\"keccak256\":\"0x61206ab39336de7819390609370c7eebf34b03ce3f003578b34f515ef8645206\",\"urls\":[\"bzzr://74d5738e6869cbd3147a73216322cda2a80a75317c28b25138e91320616e71ba\"]},\"/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/post.sol\":{\"keccak256\":\"0x57ae677ad98252f843e9b2ff32c601f0171a0a98880f0efaa0525155ea922b9f\",\"urls\":[\"bzzr://b528154d629e3cb0858bab5f098d4dd6bd0dcacd411380f2b2751db077007e3e\"]}},\"version\":1}",
+  "bytecode": "0x608060405266038d7ea4c68000600155662386f26fc10000600255336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36107b9806100e56000396000f3fe6080604052600436106100af576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063129d1da0146100b457806326eb4ca8146100df5780633ccfd60b1461011a578063503877fa14610131578063591a5eb61461015f578063715018a6146102245780638da5cb5b1461023b5780638f32d59b1461029257806395dcf0af146102c1578063b69ef8a81461032d578063f2fde38b14610358575b600080fd5b3480156100c057600080fd5b506100c96103a9565b6040518082815260200191505060405180910390f35b3480156100eb57600080fd5b506101186004803603602081101561010257600080fd5b81019080803590602001909291905050506103b3565b005b34801561012657600080fd5b5061012f6103d0565b005b61015d6004803603602081101561014757600080fd5b8101908080359060200190929190505050610443565b005b6102226004803603604081101561017557600080fd5b81019080803590602001909291908035906020019064010000000081111561019c57600080fd5b8201836020820111156101ae57600080fd5b803590602001918460018302840111640100000000831117156101d057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610483565b005b34801561023057600080fd5b50610239610498565b005b34801561024757600080fd5b5061025061056a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561029e57600080fd5b506102a7610593565b604051808215151515815260200191505060405180910390f35b3480156102cd57600080fd5b506102d66105ea565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156103195780820151818401526020810190506102fe565b505050509050019250505060405180910390f35b34801561033957600080fd5b50610342610642565b6040518082815260200191505060405180910390f35b34801561036457600080fd5b506103a76004803603602081101561037b57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610674565b005b6000600154905090565b6103bb610593565b15156103c657600080fd5b8060018190555050565b6103d8610593565b15156103e357600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610440573d6000803e3d6000fd5b50565b600254341015151561045457600080fd5b600381908060018154018082558091505090600182039060005260206000200160009091929091909150555050565b600154341015151561049457600080fd5b5050565b6104a0610593565b15156104ab57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6060600380548060200260200160405190810160405280929190818152602001828054801561063857602002820191906000526020600020905b815481526020019060010190808311610624575b5050505050905090565b600061064c610593565b151561065757600080fd5b3073ffffffffffffffffffffffffffffffffffffffff1631905090565b61067c610593565b151561068757600080fd5b61069081610693565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156106cf57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a72305820b149ef52a81633e7eac326f2c9335fdb085e771b1839c0257570ad338d5256ef0029",
+  "deployedBytecode": "0x6080604052600436106100af576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063129d1da0146100b457806326eb4ca8146100df5780633ccfd60b1461011a578063503877fa14610131578063591a5eb61461015f578063715018a6146102245780638da5cb5b1461023b5780638f32d59b1461029257806395dcf0af146102c1578063b69ef8a81461032d578063f2fde38b14610358575b600080fd5b3480156100c057600080fd5b506100c96103a9565b6040518082815260200191505060405180910390f35b3480156100eb57600080fd5b506101186004803603602081101561010257600080fd5b81019080803590602001909291905050506103b3565b005b34801561012657600080fd5b5061012f6103d0565b005b61015d6004803603602081101561014757600080fd5b8101908080359060200190929190505050610443565b005b6102226004803603604081101561017557600080fd5b81019080803590602001909291908035906020019064010000000081111561019c57600080fd5b8201836020820111156101ae57600080fd5b803590602001918460018302840111640100000000831117156101d057600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610483565b005b34801561023057600080fd5b50610239610498565b005b34801561024757600080fd5b5061025061056a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561029e57600080fd5b506102a7610593565b604051808215151515815260200191505060405180910390f35b3480156102cd57600080fd5b506102d66105ea565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156103195780820151818401526020810190506102fe565b505050509050019250505060405180910390f35b34801561033957600080fd5b50610342610642565b6040518082815260200191505060405180910390f35b34801561036457600080fd5b506103a76004803603602081101561037b57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610674565b005b6000600154905090565b6103bb610593565b15156103c657600080fd5b8060018190555050565b6103d8610593565b15156103e357600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610440573d6000803e3d6000fd5b50565b600254341015151561045457600080fd5b600381908060018154018082558091505090600182039060005260206000200160009091929091909150555050565b600154341015151561049457600080fd5b5050565b6104a0610593565b15156104ab57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b6060600380548060200260200160405190810160405280929190818152602001828054801561063857602002820191906000526020600020905b815481526020019060010190808311610624575b5050505050905090565b600061064c610593565b151561065757600080fd5b3073ffffffffffffffffffffffffffffffffffffffff1631905090565b61067c610593565b151561068757600080fd5b61069081610693565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156106cf57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea165627a7a72305820b149ef52a81633e7eac326f2c9335fdb085e771b1839c0257570ad338d5256ef0029",
+  "sourceMap": "547:1027:3:-;;;293:4:1;278:19;;331:4;311:24;;594:10:2;585:6;;:19;;;;;;;;;;;;;;;;;;653:6;;;;;;;;;;;620:40;;649:1;620:40;;;;;;;;;;;;547:1027:3;;;;;;",
+  "deployedSourceMap": "547:1027:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;755:77:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;755:77:1;;;;;;;;;;;;;;;;;;;;;;;587:83;;8:9:-1;5:2;;;30:1;27;20:12;5:2;587:83:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;587:83:1;;;;;;;;;;;;;;;;;;;;422:100;;8:9:-1;5:2;;;30:1;27;20:12;5:2;422:100:1;;;;;;1187:129:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1187:129:3;;;;;;;;;;;;;;;;;;;;820:90;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;820:90:3;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;820:90:3;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;820:90:3;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;820:90:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;820:90:3;;;;;;;;;;;;;;;;;;1526:140:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1526:140:2;;;;;;736:79;;8:9:-1;5:2;;;30:1;27;20:12;5:2;736:79:2;;;;;;;;;;;;;;;;;;;;;;;;;;;1071:92;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1071:92:2;;;;;;;;;;;;;;;;;;;;;;;;;;;1462:103:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1462:103:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1462:103:3;;;;;;;;;;;;;;;;;929:104:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;929:104:1;;;;;;;;;;;;;;;;;;;;;;;1843:109:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1843:109:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1843:109:2;;;;;;;;;;;;;;;;;;;;;;755:77:1;793:4;817:7;;810:14;;755:77;:::o;587:83::-;948:9:2;:7;:9::i;:::-;940:18;;;;;;;;658:4:1;648:7;:14;;;;587:83;:::o;422:100::-;948:9:2;:7;:9::i;:::-;940:18;;;;;;;;472:10:1;:19;;:42;500:4;492:21;;;472:42;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;472:42:1;422:100::o;1187:129:3:-;1296:12:1;;1283:9;:25;;1275:34;;;;;;;;1278:12:3;1296:11;1278:30;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1278:30:3;;;;;;;;;;;;;;;;;;;;;;1187:129;:::o;820:90::-;1194:7:1;;1181:9;:20;;1173:29;;;;;;;;820:90:3;;:::o;1526:140:2:-;948:9;:7;:9::i;:::-;940:18;;;;;;;;1625:1;1588:40;;1609:6;;;;;;;;;;;1588:40;;;;;;;;;;;;1656:1;1639:6;;:19;;;;;;;;;;;;;;;;;;1526:140::o;736:79::-;774:7;801:6;;;;;;;;;;;794:13;;736:79;:::o;1071:92::-;1111:4;1149:6;;;;;;;;;;;1135:20;;:10;:20;;;1128:27;;1071:92;:::o;1462:103:3:-;1509:16;1545:12;1538:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1462:103;:::o;929:104:1:-;979:4;948:9:2;:7;:9::i;:::-;940:18;;;;;;;;1012:4:1;1004:21;;;997:28;;929:104;:::o;1843:109:2:-;948:9;:7;:9::i;:::-;940:18;;;;;;;;1916:28;1935:8;1916:18;:28::i;:::-;1843:109;:::o;2102:187::-;2196:1;2176:22;;:8;:22;;;;2168:31;;;;;;;;2244:8;2215:38;;2236:6;;;;;;;;;;;2215:38;;;;;;;;;;;;2273:8;2264:6;;:17;;;;;;;;;;;;;;;;;;2102:187;:::o",
+  "source": "pragma solidity ^0.5.0;\r\nimport \"./ownable.sol\";\r\nimport \"./feeSupport.sol\";\r\n\r\n/**\r\n * @title Post\r\n * @author Duncan\r\n * @dev The Post contract provides simple operations to leave message and fetch txhash on ethereum via transaction data.\r\n *      Users simply sends message to \"post\" method, and get the txhash.\r\n *      Then they send the txhash to \"addPostTxHashes\" method, making the txhash easily accessible via the contract.\r\n *      Readers can get all the post txhashes and then get the message by asking full nodes with txhashes.\r\n */\r\ncontract Post is FeeSupport{\r\n    \r\n    uint256[] postTxHashes;\r\n    \r\n    /**\r\n     * @dev The purpose of the function is to make _replyTxHash and _content recorded in transaction data on chain.\r\n     *      An payable empty function is sufficient to do so.\r\n     */\r\n    function post(uint256 _replyTxHash, string memory _content) public payable chargePostFee{}\r\n    \r\n    /**\r\n     * @dev After post method called, one can choose if they want the txhash recorded by \r\n     *      Currently, there is no way to check if txhash exists on chain by solidity\r\n     *      To prevent abusement, One must pay to use this function\r\n     */\r\n    function addPostTxHashes(uint256 _postTxHash) public payable chargeAddTxHashFee {\r\n        postTxHashes.push(_postTxHash);\r\n    }\r\n    \r\n    /**\r\n     * @return All the txhashes will be returned and readers can use them to query full nodes to get messages.\r\n     */    \r\n    function getPostTxHashes() public view returns(uint256[] memory) {\r\n        return postTxHashes;\r\n    }\r\n    \r\n}",
+  "sourcePath": "D:/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/post.sol",
+  "ast": {
+    "absolutePath": "/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/post.sol",
+    "exportedSymbols": {
+      "Post": [
+        292
+      ]
+    },
+    "id": 293,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 251,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "absolutePath": "/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/ownable.sol",
+        "file": "./ownable.sol",
+        "id": 252,
+        "nodeType": "ImportDirective",
+        "scope": 293,
+        "sourceUnit": 250,
+        "src": "25:23:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/feeSupport.sol",
+        "file": "./feeSupport.sol",
+        "id": 253,
+        "nodeType": "ImportDirective",
+        "scope": 293,
+        "sourceUnit": 141,
+        "src": "50:26:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 254,
+              "name": "FeeSupport",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 140,
+              "src": "564:10:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FeeSupport_$140",
+                "typeString": "contract FeeSupport"
+              }
+            },
+            "id": 255,
+            "nodeType": "InheritanceSpecifier",
+            "src": "564:10:3"
+          }
+        ],
+        "contractDependencies": [
+          140,
+          249
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Post\r\n@author Duncan\r\n@dev The Post contract provides simple operations to leave message and fetch txhash on ethereum via transaction data.\r\n     Users simply sends message to \"post\" method, and get the txhash.\r\n     Then they send the txhash to \"addPostTxHashes\" method, making the txhash easily accessible via the contract.\r\n     Readers can get all the post txhashes and then get the message by asking full nodes with txhashes.\r",
+        "fullyImplemented": true,
+        "id": 292,
+        "linearizedBaseContracts": [
+          292,
+          140,
+          249
+        ],
+        "name": "Post",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 258,
+            "name": "postTxHashes",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "587:22:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+              "typeString": "uint256[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 256,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "587:7:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 257,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "587:9:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                "typeString": "uint256[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 267,
+              "nodeType": "Block",
+              "src": "908:2:3",
+              "statements": []
+            },
+            "documentation": "@dev The purpose of the function is to make _replyTxHash and _content recorded in transaction data on chain.\r\n     An payable empty function is sufficient to do so.\r",
+            "id": 268,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 265,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 264,
+                  "name": "chargePostFee",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 128,
+                  "src": "895:13:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "895:13:3"
+              }
+            ],
+            "name": "post",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 263,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 260,
+                  "name": "_replyTxHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 268,
+                  "src": "834:20:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 259,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "834:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 262,
+                  "name": "_content",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 268,
+                  "src": "856:22:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 261,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "856:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "833:46:3"
+            },
+            "returnParameters": {
+              "id": 266,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "908:0:3"
+            },
+            "scope": 292,
+            "src": "820:90:3",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 281,
+              "nodeType": "Block",
+              "src": "1267:49:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 278,
+                        "name": "_postTxHash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 270,
+                        "src": "1296:11:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 275,
+                        "name": "postTxHashes",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 258,
+                        "src": "1278:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+                          "typeString": "uint256[] storage ref"
+                        }
+                      },
+                      "id": 277,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1278:17:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256) returns (uint256)"
+                      }
+                    },
+                    "id": 279,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1278:30:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 280,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1278:30:3"
+                }
+              ]
+            },
+            "documentation": "@dev After post method called, one can choose if they want the txhash recorded by \r\n     Currently, there is no way to check if txhash exists on chain by solidity\r\n     To prevent abusement, One must pay to use this function\r",
+            "id": 282,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 273,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 272,
+                  "name": "chargeAddTxHashFee",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 139,
+                  "src": "1248:18:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1248:18:3"
+              }
+            ],
+            "name": "addPostTxHashes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 271,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 270,
+                  "name": "_postTxHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 282,
+                  "src": "1212:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 269,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1212:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1211:21:3"
+            },
+            "returnParameters": {
+              "id": 274,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1267:0:3"
+            },
+            "scope": 292,
+            "src": "1187:129:3",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 290,
+              "nodeType": "Block",
+              "src": "1527:38:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 288,
+                    "name": "postTxHashes",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 258,
+                    "src": "1545:12:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+                      "typeString": "uint256[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 287,
+                  "id": 289,
+                  "nodeType": "Return",
+                  "src": "1538:19:3"
+                }
+              ]
+            },
+            "documentation": "@return All the txhashes will be returned and readers can use them to query full nodes to get messages.\r",
+            "id": 291,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPostTxHashes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 283,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1486:2:3"
+            },
+            "returnParameters": {
+              "id": 287,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 286,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "1509:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 284,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1509:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 285,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1509:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1508:18:3"
+            },
+            "scope": 292,
+            "src": "1462:103:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "547:1027:3"
+      }
+    ],
+    "src": "0:1574:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/post.sol",
+    "exportedSymbols": {
+      "Post": [
+        292
+      ]
+    },
+    "id": 293,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 251,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "absolutePath": "/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/ownable.sol",
+        "file": "./ownable.sol",
+        "id": 252,
+        "nodeType": "ImportDirective",
+        "scope": 293,
+        "sourceUnit": 250,
+        "src": "25:23:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/Duncan/desktop/NTU/107-2/Dapp/workspace/BlockBoard/solidity/contracts/feeSupport.sol",
+        "file": "./feeSupport.sol",
+        "id": 253,
+        "nodeType": "ImportDirective",
+        "scope": 293,
+        "sourceUnit": 141,
+        "src": "50:26:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 254,
+              "name": "FeeSupport",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 140,
+              "src": "564:10:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FeeSupport_$140",
+                "typeString": "contract FeeSupport"
+              }
+            },
+            "id": 255,
+            "nodeType": "InheritanceSpecifier",
+            "src": "564:10:3"
+          }
+        ],
+        "contractDependencies": [
+          140,
+          249
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Post\r\n@author Duncan\r\n@dev The Post contract provides simple operations to leave message and fetch txhash on ethereum via transaction data.\r\n     Users simply sends message to \"post\" method, and get the txhash.\r\n     Then they send the txhash to \"addPostTxHashes\" method, making the txhash easily accessible via the contract.\r\n     Readers can get all the post txhashes and then get the message by asking full nodes with txhashes.\r",
+        "fullyImplemented": true,
+        "id": 292,
+        "linearizedBaseContracts": [
+          292,
+          140,
+          249
+        ],
+        "name": "Post",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 258,
+            "name": "postTxHashes",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "587:22:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+              "typeString": "uint256[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 256,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "587:7:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 257,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "587:9:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                "typeString": "uint256[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 267,
+              "nodeType": "Block",
+              "src": "908:2:3",
+              "statements": []
+            },
+            "documentation": "@dev The purpose of the function is to make _replyTxHash and _content recorded in transaction data on chain.\r\n     An payable empty function is sufficient to do so.\r",
+            "id": 268,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 265,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 264,
+                  "name": "chargePostFee",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 128,
+                  "src": "895:13:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "895:13:3"
+              }
+            ],
+            "name": "post",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 263,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 260,
+                  "name": "_replyTxHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 268,
+                  "src": "834:20:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 259,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "834:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 262,
+                  "name": "_content",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 268,
+                  "src": "856:22:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 261,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "856:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "833:46:3"
+            },
+            "returnParameters": {
+              "id": 266,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "908:0:3"
+            },
+            "scope": 292,
+            "src": "820:90:3",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 281,
+              "nodeType": "Block",
+              "src": "1267:49:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 278,
+                        "name": "_postTxHash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 270,
+                        "src": "1296:11:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 275,
+                        "name": "postTxHashes",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 258,
+                        "src": "1278:12:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+                          "typeString": "uint256[] storage ref"
+                        }
+                      },
+                      "id": 277,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1278:17:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256) returns (uint256)"
+                      }
+                    },
+                    "id": 279,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1278:30:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 280,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1278:30:3"
+                }
+              ]
+            },
+            "documentation": "@dev After post method called, one can choose if they want the txhash recorded by \r\n     Currently, there is no way to check if txhash exists on chain by solidity\r\n     To prevent abusement, One must pay to use this function\r",
+            "id": 282,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 273,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 272,
+                  "name": "chargeAddTxHashFee",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 139,
+                  "src": "1248:18:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1248:18:3"
+              }
+            ],
+            "name": "addPostTxHashes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 271,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 270,
+                  "name": "_postTxHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 282,
+                  "src": "1212:19:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 269,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1212:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1211:21:3"
+            },
+            "returnParameters": {
+              "id": 274,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1267:0:3"
+            },
+            "scope": 292,
+            "src": "1187:129:3",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 290,
+              "nodeType": "Block",
+              "src": "1527:38:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 288,
+                    "name": "postTxHashes",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 258,
+                    "src": "1545:12:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+                      "typeString": "uint256[] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 287,
+                  "id": 289,
+                  "nodeType": "Return",
+                  "src": "1538:19:3"
+                }
+              ]
+            },
+            "documentation": "@return All the txhashes will be returned and readers can use them to query full nodes to get messages.\r",
+            "id": 291,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPostTxHashes",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 283,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1486:2:3"
+            },
+            "returnParameters": {
+              "id": 287,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 286,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "1509:16:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 284,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1509:7:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 285,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1509:9:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1508:18:3"
+            },
+            "scope": 292,
+            "src": "1462:103:3",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "547:1027:3"
+      }
+    ],
+    "src": "0:1574:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x7a7082E2C5E83522c3Ae732005969C5666BB7406",
+      "transactionHash": "0x8a873e9294abbb5cb428091e79698896b0058bbd305d84447f6734ad9d7c98c6"
+    }
+  },
+  "schemaVersion": "3.0.6",
+  "updatedAt": "2019-04-19T03:05:28.468Z",
+  "devdoc": {
+    "author": "Duncan\r",
+    "details": "The Post contract provides simple operations to leave message and fetch txhash on ethereum via transaction data.\r     Users simply sends message to \"post\" method, and get the txhash.\r     Then they send the txhash to \"addPostTxHashes\" method, making the txhash easily accessible via the contract.\r     Readers can get all the post txhashes and then get the message by asking full nodes with txhashes.\r",
+    "methods": {
+      "addPostTxHashes(uint256)": {
+        "details": "After post method called, one can choose if they want the txhash recorded by \r     Currently, there is no way to check if txhash exists on chain by solidity\r     To prevent abusement, One must pay to use this function\r"
+      },
+      "balance()": {
+        "return": "return the current balance the contract has\r"
+      },
+      "getPostFee()": {
+        "return": "fee needed to post an article\r"
+      },
+      "getPostTxHashes()": {
+        "return": "All the txhashes will be returned and readers can use them to query full nodes to get messages.\r"
+      },
+      "isOwner()": {
+        "return": "true if `msg.sender` is the owner of the contract.\r"
+      },
+      "owner()": {
+        "return": "the address of the owner.\r"
+      },
+      "post(uint256,string)": {
+        "details": "The purpose of the function is to make _replyTxHash and _content recorded in transaction data on chain.\r     An payable empty function is sufficient to do so.\r"
+      },
+      "renounceOwnership()": {
+        "details": "Allows the current owner to relinquish control of the contract.\r It will not be possible to call the functions with the `onlyOwner`\r modifier anymore.\r"
+      },
+      "setPostFee(uint256)": {
+        "details": "setter of postFee\r"
+      },
+      "transferOwnership(address)": {
+        "details": "Allows the current owner to transfer control of the contract to a newOwner.\r",
+        "params": {
+          "newOwner": "The address to transfer ownership to.\r"
+        }
+      },
+      "withdraw()": {
+        "details": "withdraw money from the contract to owner\r"
+      }
+    },
+    "title": "Post\r"
+  },
+  "userdoc": {
+    "methods": {
+      "renounceOwnership()": {
+        "notice": "Renouncing ownership will leave the contract without an owner,\r thereby removing any functionality that is only available to the owner.\r"
+      }
+    }
+  }
+}
